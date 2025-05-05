@@ -9,3 +9,16 @@ C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj
 C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.exe
 C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.pdb
 C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmCircle.resources
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\bin\Debug\TaskOneGeometricFigures.exe.config
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\bin\Debug\TaskOneGeometricFigures.exe
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\bin\Debug\TaskOneGeometricFigures.pdb
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.csproj.AssemblyReference.cache
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmCircle.resources
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTrapeze.resources
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTriangle.resources
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.Properties.Resources.resources
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.csproj.GenerateResource.cache
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.exe
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.pdb
+C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTrapezoid.resources

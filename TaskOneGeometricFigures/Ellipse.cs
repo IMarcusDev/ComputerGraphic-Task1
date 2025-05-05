@@ -30,7 +30,7 @@ namespace TaskOneGeometricFigures
             this.mMinorAxis = float.Parse(txtMinorAxis.Text);
         }
 
-        public void perimeterCircle()
+        public void perimeterEllipse()
         {
             float a2 = this.mMajorAxis * this.mMajorAxis;
             float b2 = this.mMinorAxis * this.mMinorAxis;
@@ -38,7 +38,7 @@ namespace TaskOneGeometricFigures
             this.mPerimeter = 2 * (float)Math.PI * (float)Math.Sqrt((a2 + b2)/2);
         }
 
-        public void areaCircle()
+        public void areaEllipse()
         {
             this.mArea = (float)Math.PI * this.mMajorAxis * this.mMinorAxis;
         }

@@ -13,7 +13,6 @@ namespace TaskOneGeometricFigures
     internal class Circle
     {
         private float mRadius;
-        private float mAngle;
         private float mPerimeter;
         private float mArea;
         private const float SF = 20;
@@ -22,7 +21,7 @@ namespace TaskOneGeometricFigures
 
         public Circle()
         {
-            this.mRadius = 0.0f; this.mAngle = 360;
+            this.mRadius = 0.0f;
             this.mPerimeter = 0.0f; this.mArea = 0.0f ;
         }
 
@@ -49,7 +48,7 @@ namespace TaskOneGeometricFigures
 
         public void initData(TextBox txtRadius, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
         {
-            this.mRadius = 0.0f; this.mAngle = 360;
+            this.mRadius = 0.0f;
             this.mPerimeter = 0.0f; this.mArea = 0.0f;
 
             txtRadius.Text = ""; txtPerimeter.Text = "";

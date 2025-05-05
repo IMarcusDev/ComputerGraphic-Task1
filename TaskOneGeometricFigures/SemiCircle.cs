@@ -31,12 +31,12 @@ namespace TaskOneGeometricFigures
 
         public void perimeterCircle()
         {
-            this.mPerimeter = 2 * (float)Math.PI * this.mRadius;
+            this.mPerimeter = (float)Math.PI * this.mRadius;
         }
 
         public void areaCircle()
         {
-            this.mArea = (float)Math.PI * this.mRadius * this.mRadius;
+            this.mArea = ((float)Math.PI * this.mRadius * this.mRadius)/2;
         }
 
         public void showData(TextBox txtPerimeter, TextBox txtArea)
