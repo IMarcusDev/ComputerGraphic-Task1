@@ -1,1 +1,19 @@
+# Archivos generados por Visual Studio
 .vs/
+*.user
+*.suo
+
+# Directorios de compilación
+bin/
+obj/
+
+**/bin/
+**/obj/
+
+
+# Archivos de logs y dumps
+*.log
+*.dmp
+
+# Archivos de usuario de VS Code (si trabajas con VS Code también)
+.vscode/

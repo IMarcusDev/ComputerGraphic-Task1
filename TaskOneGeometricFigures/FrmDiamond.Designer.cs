@@ -44,42 +44,48 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(153, 41);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(151, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 32);
+            this.label4.Size = new System.Drawing.Size(175, 41);
             this.label4.TabIndex = 36;
             this.label4.Text = "Diamond";
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Tan;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnReset.Location = new System.Drawing.Point(226, 254);
+            this.btnReset.Location = new System.Drawing.Point(226, 242);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 35);
+            this.btnReset.Size = new System.Drawing.Size(125, 54);
             this.btnReset.TabIndex = 35;
             this.btnReset.Text = "Resetear";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Tan;
+            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCalcular.Location = new System.Drawing.Point(94, 254);
+            this.btnCalcular.Location = new System.Drawing.Point(94, 242);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(125, 35);
+            this.btnCalcular.Size = new System.Drawing.Size(125, 54);
             this.btnCalcular.TabIndex = 34;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txtArea
             // 
+            this.txtArea.BackColor = System.Drawing.Color.OldLace;
+            this.txtArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtArea.Location = new System.Drawing.Point(226, 377);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
-            this.txtArea.Size = new System.Drawing.Size(100, 35);
+            this.txtArea.Size = new System.Drawing.Size(140, 35);
             this.txtArea.TabIndex = 33;
             // 
             // label3
@@ -94,11 +100,13 @@
             // 
             // txtPerimeter
             // 
+            this.txtPerimeter.BackColor = System.Drawing.Color.OldLace;
+            this.txtPerimeter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPerimeter.Location = new System.Drawing.Point(226, 326);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
-            this.txtPerimeter.Size = new System.Drawing.Size(100, 35);
+            this.txtPerimeter.Size = new System.Drawing.Size(140, 35);
             this.txtPerimeter.TabIndex = 31;
             // 
             // label2
@@ -133,25 +141,30 @@
             // 
             // txtMinorDiag
             // 
+            this.txtMinorDiag.BackColor = System.Drawing.Color.OldLace;
+            this.txtMinorDiag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMinorDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMinorDiag.Location = new System.Drawing.Point(251, 167);
             this.txtMinorDiag.Name = "txtMinorDiag";
-            this.txtMinorDiag.Size = new System.Drawing.Size(100, 35);
+            this.txtMinorDiag.Size = new System.Drawing.Size(140, 35);
             this.txtMinorDiag.TabIndex = 27;
             // 
             // txtMajorDiag
             // 
+            this.txtMajorDiag.BackColor = System.Drawing.Color.OldLace;
+            this.txtMajorDiag.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMajorDiag.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMajorDiag.Location = new System.Drawing.Point(251, 113);
             this.txtMajorDiag.Name = "txtMajorDiag";
-            this.txtMajorDiag.Size = new System.Drawing.Size(100, 35);
+            this.txtMajorDiag.Size = new System.Drawing.Size(140, 35);
             this.txtMajorDiag.TabIndex = 26;
             // 
             // FrmDiamond
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 481);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(490, 514);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);

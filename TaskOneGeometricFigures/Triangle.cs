@@ -40,13 +40,8 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
-        }
-
-        public bool IsValid()
-        {
-            return this.mWidth > 0 && this.mHeight > 0;
         }
 
         public void PerimeterTriangle()
@@ -89,11 +84,6 @@ namespace TaskOneGeometricFigures
             { point1, point2, point3};
 
             mGraph.DrawPolygon(mPen, trianglePoints);
-        }
-
-        public void CloseForm(Form form)
-        {
-            form.Close();
         }
     }
 }

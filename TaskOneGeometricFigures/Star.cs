@@ -44,12 +44,6 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
-            if (!IsValid())
-            {
-                MessageBox.Show("Dimensiones inválidas. No se puede dibujar la estrella.", "Error");
-                return;
-            }
-
             this.mGraphic = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 2);
 
@@ -146,11 +140,6 @@ namespace TaskOneGeometricFigures
 
             txtOuterRadius.Focus();
             picCanvas.Refresh();
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
         }
 
         public bool IsValid()

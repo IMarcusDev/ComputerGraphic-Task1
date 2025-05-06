@@ -39,14 +39,14 @@ namespace TaskOneGeometricFigures
                 }
                 else if (this.mWidth == this.mHeight)
                 {
-                    MessageBox.Show("El ancho y la altura son iguales, lo que forma un cuadrado. Por favor, ingrese valores diferentes para formar un rectángulo.", "Advertencia");
+                    MessageBox.Show("El ancho y la altura son iguales, lo que forma un cuadrado. Por favor, ingrese otros valores diferentes para formar un rectángulo.", "Advertencia");
                     this.mWidth = 0.0f;
                     this.mHeight = 0.0f;
                 }
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -80,20 +80,9 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
-            if (this.mWidth <= 0 || this.mHeight <= 0)
-            {
-                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el rectángulo.", "Error");
-                return;
-            }
-
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
             mGraph.DrawRectangle(mPen, 0, 0, mWidth * SF, mHeight * SF);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
         }
     }
 }

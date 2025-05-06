@@ -28,18 +28,10 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             ellipse.readData(txtMajorAxis, txtMinorAxis);
-
-            if (ellipse.IsValid())
-            {
-                ellipse.perimeterEllipse();
-                ellipse.areaEllipse();
-                ellipse.showData(txtPerimeter, txtArea);
-                ellipse.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman una elipse válida.", "Error");
-            }
+            ellipse.perimeterEllipse();
+            ellipse.areaEllipse();
+            ellipse.showData(txtPerimeter, txtArea);
+            ellipse.plotShape(picCanvas);
         }
     }
 }

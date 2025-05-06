@@ -37,7 +37,7 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar un número positivo.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar un número positivo.", "Error");
             }
         }
 
@@ -71,20 +71,9 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
-            if (this.mWidth <= 0)
-            {
-                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el cuadrado.", "Error");
-                return;
-            }
-
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
             mGraph.DrawRectangle(mPen, 0, 0, mWidth * SF, mWidth * SF);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
         }
     }
 }

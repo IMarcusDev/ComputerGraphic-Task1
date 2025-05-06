@@ -40,13 +40,8 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
-        }
-
-        public bool IsValid()
-        {
-            return this.mMajorAxis > 0 && this.mMinorAxis > 0;
         }
 
         public void perimeterEllipse()
@@ -86,11 +81,6 @@ namespace TaskOneGeometricFigures
             this.mPen = new Pen(Color.Blue, 3);
 
             this.mGraph.DrawEllipse(this.mPen, 0, 0, SF * this.mMajorAxis, SF * this.mMinorAxis);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
         }
     }
 }

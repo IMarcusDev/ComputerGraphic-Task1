@@ -39,7 +39,7 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar un número positivo.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar un número positivo.", "Error");
             }
         }
 
@@ -73,28 +73,12 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
-            if (this.mRadius <= 0)
-            {
-                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el círculo.", "Error");
-                return;
-            }
-
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
             float diameter = this.mRadius * 2 * SF;
 
             this.mGraph.DrawEllipse(this.mPen, 0, 0, diameter, diameter);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
-        public bool IsValid()
-        {
-            return this.mRadius > 0;
         }
     }
 }

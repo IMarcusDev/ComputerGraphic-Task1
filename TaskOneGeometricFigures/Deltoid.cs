@@ -50,13 +50,8 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
-        }
-
-        public bool IsValid()
-        {
-            return this.mMajorAxis > 0 && this.mMinorAxis > 0 && this.mWidth > 0;
         }
 
         public void perimeterDeltoid()
@@ -111,11 +106,6 @@ namespace TaskOneGeometricFigures
                 {point1, point2, point3, point4};
 
             mGraphic.DrawPolygon(mPen, points);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
         }
     }
 }

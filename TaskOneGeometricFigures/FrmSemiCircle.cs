@@ -28,18 +28,10 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             semicircle.readData(txtRadius);
-
-            if (semicircle.IsValid())
-            {
-                semicircle.perimeterCircle();
-                semicircle.areaCircle();
-                semicircle.showData(txtPerimeter, txtArea);
-                semicircle.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman un semicírculo válido.", "Error");
-            }
+            semicircle.perimeterCircle();
+            semicircle.areaCircle();
+            semicircle.showData(txtPerimeter, txtArea);
+            semicircle.plotShape(picCanvas);
         }
     }
 }

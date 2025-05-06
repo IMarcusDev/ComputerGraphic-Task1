@@ -34,23 +34,15 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             circle.readData(txtRadius);
-
-            if (circle.IsValid())
-            {
-                circle.perimeterCircle();
-                circle.areaCircle();
-                circle.showData(txtPerimeter, txtArea);
-                circle.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman un círculo válido.", "Error");
-            }
+            circle.perimeterCircle();
+            circle.areaCircle();
+            circle.showData(txtPerimeter, txtArea);
+            circle.plotShape(picCanvas);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            circle.closeForm(this);
+            
         }
     }
 }

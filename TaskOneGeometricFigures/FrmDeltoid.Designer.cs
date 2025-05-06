@@ -46,41 +46,48 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(181, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 32);
+            this.label4.Size = new System.Drawing.Size(163, 41);
             this.label4.TabIndex = 23;
             this.label4.Text = "Deltoide";
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Tan;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnReset.Location = new System.Drawing.Point(222, 284);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 35);
+            this.btnReset.Size = new System.Drawing.Size(125, 49);
             this.btnReset.TabIndex = 22;
             this.btnReset.Text = "Resetear";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Tan;
+            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCalcular.Location = new System.Drawing.Point(90, 284);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(125, 35);
+            this.btnCalcular.Size = new System.Drawing.Size(125, 49);
             this.btnCalcular.TabIndex = 21;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txtArea
             // 
+            this.txtArea.BackColor = System.Drawing.Color.OldLace;
+            this.txtArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtArea.Location = new System.Drawing.Point(222, 407);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
-            this.txtArea.Size = new System.Drawing.Size(100, 35);
+            this.txtArea.Size = new System.Drawing.Size(141, 35);
             this.txtArea.TabIndex = 20;
             // 
             // label3
@@ -95,11 +102,13 @@
             // 
             // txtPerimeter
             // 
+            this.txtPerimeter.BackColor = System.Drawing.Color.OldLace;
+            this.txtPerimeter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtPerimeter.Location = new System.Drawing.Point(222, 356);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
-            this.txtPerimeter.Size = new System.Drawing.Size(100, 35);
+            this.txtPerimeter.Size = new System.Drawing.Size(141, 35);
             this.txtPerimeter.TabIndex = 18;
             // 
             // label2
@@ -134,18 +143,22 @@
             // 
             // txtMinorAxis
             // 
+            this.txtMinorAxis.BackColor = System.Drawing.Color.OldLace;
+            this.txtMinorAxis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMinorAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMinorAxis.Location = new System.Drawing.Point(206, 160);
             this.txtMinorAxis.Name = "txtMinorAxis";
-            this.txtMinorAxis.Size = new System.Drawing.Size(100, 35);
+            this.txtMinorAxis.Size = new System.Drawing.Size(141, 35);
             this.txtMinorAxis.TabIndex = 14;
             // 
             // txtMajorAxis
             // 
+            this.txtMajorAxis.BackColor = System.Drawing.Color.OldLace;
+            this.txtMajorAxis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMajorAxis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtMajorAxis.Location = new System.Drawing.Point(206, 106);
             this.txtMajorAxis.Name = "txtMajorAxis";
-            this.txtMajorAxis.Size = new System.Drawing.Size(100, 35);
+            this.txtMajorAxis.Size = new System.Drawing.Size(141, 35);
             this.txtMajorAxis.TabIndex = 13;
             // 
             // label5
@@ -160,16 +173,19 @@
             // 
             // txtWidth
             // 
+            this.txtWidth.BackColor = System.Drawing.Color.OldLace;
+            this.txtWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtWidth.Location = new System.Drawing.Point(206, 210);
             this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(100, 35);
+            this.txtWidth.Size = new System.Drawing.Size(141, 35);
             this.txtWidth.TabIndex = 24;
             // 
             // FrmDeltoid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(490, 514);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtWidth);

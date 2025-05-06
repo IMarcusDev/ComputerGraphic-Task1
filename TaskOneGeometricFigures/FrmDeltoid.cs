@@ -28,18 +28,10 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             deltoide.readData(txtMajorAxis, txtMinorAxis, txtWidth);
-
-            if (deltoide.IsValid())
-            {
-                deltoide.perimeterDeltoid();
-                deltoide.areaDeltoid();
-                deltoide.showData(txtPerimeter, txtArea);
-                deltoide.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman un deltoide válido.", "Error");
-            }
+            deltoide.perimeterDeltoid();
+            deltoide.areaDeltoid();
+            deltoide.showData(txtPerimeter, txtArea);
+            deltoide.plotShape(picCanvas);
         }
     }
 }

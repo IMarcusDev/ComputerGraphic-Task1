@@ -23,16 +23,8 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             star.readData(txtOuterRadius, txtInnerRadius);
-
-            if (star.IsValid())
-            {
-                star.showData(txtPerimeter, txtArea);
-                star.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman una estrella válida.", "Error");
-            }
+            star.showData(txtPerimeter, txtArea);
+            star.plotShape(picCanvas);
         }
 
         private void btnReset_Click(object sender, EventArgs e)

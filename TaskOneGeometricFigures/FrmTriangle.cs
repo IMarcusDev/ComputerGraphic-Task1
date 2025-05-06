@@ -34,23 +34,15 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             triangle.ReadData(txtWidth, txtHeight);
-
-            if (triangle.IsValid())
-            {
-                triangle.PerimeterTriangle();
-                triangle.AreaTriangle();
-                triangle.ShowData(txtPerimeter, txtArea);
-                triangle.PlotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman un triángulo válido.", "Error");
-            }
+            triangle.PerimeterTriangle();
+            triangle.AreaTriangle();
+            triangle.ShowData(txtPerimeter, txtArea);
+            triangle.PlotShape(picCanvas);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            triangle.CloseForm(this);
+            
         }
     }
 }

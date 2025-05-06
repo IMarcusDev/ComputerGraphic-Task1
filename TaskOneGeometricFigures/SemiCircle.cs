@@ -38,7 +38,7 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar un número positivo.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar un número positivo.", "Error");
             }
         }
 
@@ -84,16 +84,6 @@ namespace TaskOneGeometricFigures
             float diameter = this.mRadius * 2 * SF;
 
             this.mGraph.DrawPie(mPen, 0, 0, diameter, diameter, 0, 180);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
-        public bool IsValid()
-        {
-            return this.mRadius > 0;
         }
     }
 }

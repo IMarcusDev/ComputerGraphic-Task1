@@ -57,7 +57,7 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso  inválido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -94,11 +94,6 @@ namespace TaskOneGeometricFigures
             txtPerimeter.Text = this.mPerimeter.ToString();
         }
 
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
         public void plotShape(PictureBox picCanvas)
         {
             this.mGraph = picCanvas.CreateGraphics();
@@ -115,11 +110,6 @@ namespace TaskOneGeometricFigures
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
             
             mGraph.DrawPolygon(this.mPen, points);
-        }
-
-        public bool IsValid()
-        {
-            return this.mBaseMajor > 0 && this.mBaseMinor > 0 && this.mHeight > 0;
         }
     }
 }

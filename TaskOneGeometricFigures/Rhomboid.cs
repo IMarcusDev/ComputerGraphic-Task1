@@ -14,6 +14,7 @@ namespace TaskOneGeometricFigures
         private float mWidth;
         private float mPerimeter;
         private float mArea;
+        private float mAngle;
         private Graphics mGraphic;
         private Pen mPen;
         private const float SF = 20;
@@ -23,40 +24,46 @@ namespace TaskOneGeometricFigures
             this.mHeight = 0.0f; this.mWidth = 0.0f;
             this.mPerimeter = 0.0f;
             this.mArea = 0.0f;
+            this.mAngle = 0.0f;
         }
 
-        public void readData(TextBox txtHeight, TextBox txtWidth)
+        public void readData(TextBox txtHeight, TextBox txtWidth, TextBox txtAngle)
         {
             try
             {
                 float Height = float.Parse(txtHeight.Text);
                 float Width = float.Parse(txtWidth.Text);
+                float Angle = float.Parse(txtAngle.Text);
 
-                if (Height <= 0 || Width <= 0)
+                if (Height <= 0 || Width <= 0 || Angle <= 0 || Angle >= 90)
                 {
-                    MessageBox.Show("La altura y el ancho deben ser mayores a 0.", "Error");
+                    MessageBox.Show("La altura, el ancho y el ángulo deben ser mayores a 0, y el ángulo menor a 90 grados.", "Error");
                     this.mHeight = 0.0f;
                     this.mWidth = 0.0f;
+                    this.mAngle = 0.0f;
                 }
                 else
                 {
                     this.mHeight = Height;
                     this.mWidth = Width;
+                    this.mAngle = Angle;
                 }
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
-        public void initData(TextBox txtHeight, TextBox txtWidth, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
+        public void initData(TextBox txtHeight, TextBox txtWidth, TextBox txtAngle, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
         {
             this.mHeight = 0.0f; this.mWidth = 0.0f;
             this.mPerimeter = 0.0f; this.mArea = 0.0f;
+            this.mAngle = 0.0f;
 
             txtHeight.Clear();
             txtWidth.Clear();
+            txtAngle.Clear();
             txtPerimeter.Clear();
             txtArea.Clear();
 
@@ -82,9 +89,9 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
-            if (this.mHeight <= 0 || this.mWidth <= 0)
+            if (this.mHeight <= 0 || this.mWidth <= 0 || this.mAngle <= 0 || this.mAngle >= 90)
             {
-                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el romboide.", "Error");
+                MessageBox.Show("Dimensiones o ángulo inválidos. No se puede dibujar el romboide.", "Error");
                 return;
             }
 
@@ -97,24 +104,16 @@ namespace TaskOneGeometricFigures
             float offsetX = centerX - (this.mWidth * SF) / 2;
             float offsetY = centerY - (this.mHeight * SF) / 2;
 
-            PointF point1 = new PointF(offsetX + (this.mWidth / 4) * SF, offsetY);
-            PointF point2 = new PointF(offsetX + this.mWidth * SF, offsetY);
-            PointF point3 = new PointF(offsetX + this.mWidth * SF, offsetY + this.mHeight * SF);
-            PointF point4 = new PointF(offsetX, offsetY + this.mHeight * SF);
+            float angleOffset = (float)(Math.Tan(this.mAngle * Math.PI / 180) * this.mHeight * SF);
+
+            PointF point1 = new PointF(offsetX, offsetY + this.mHeight * SF);
+            PointF point2 = new PointF(offsetX + this.mWidth * SF, offsetY + this.mHeight * SF);
+            PointF point3 = new PointF(offsetX + this.mWidth * SF - angleOffset, offsetY);
+            PointF point4 = new PointF(offsetX - angleOffset, offsetY);
 
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
 
-            this.mGraphic.DrawPolygon(mPen, points);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
-        public bool IsValid()
-        {
-            return this.mHeight > 0 && this.mWidth > 0;
+            this.mGraphic.DrawPolygon(this.mPen, points);
         }
     }
 }

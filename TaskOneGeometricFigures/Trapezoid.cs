@@ -82,14 +82,15 @@ namespace TaskOneGeometricFigures
             this.mGraphic = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
-            PointF point1 = new PointF(0, this.mHeight * SF);
-            PointF point2 = new PointF(this.mSideB * SF, this.mHeight * SF);
-            PointF point3 = new PointF((this.mSideB - this.mSideC) * SF, 0);
-            PointF point4 = new PointF((this.mSideA - this.mSideD) * SF, 0);
+            PointF[] points = new PointF[]
+            {
+                new PointF(picCanvas.Width / 5.5f - this.mSideA, picCanvas.Height - picCanvas.Height / 4f + this.mSideA),
+                new PointF(picCanvas.Width - picCanvas.Width / 4f + this.mSideB, picCanvas.Height - picCanvas.Height / 3f + this.mSideB),
+                new PointF(picCanvas.Width - picCanvas.Width / 6f + this.mSideC, picCanvas.Height / 3f - this.mSideC),
+                new PointF(picCanvas.Width / 4f - this.mSideD, picCanvas.Height / 2f - this.mSideD)
+            };
 
-            PointF[] points = new PointF[] { point1, point2, point3, point4 };
-
-            this.mGraphic.DrawPolygon(mPen, points);
+            this.mGraphic.DrawPolygon(this.mPen, points);
         }
 
         public void initData(TextBox txtSideA, TextBox txtSideB, TextBox txtSideC, TextBox txtSideD, TextBox txtHeight, PictureBox picCanvas)
@@ -109,11 +110,6 @@ namespace TaskOneGeometricFigures
             picCanvas.Refresh();
         }
 
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
         public bool isValid()
         {
             if (this.mSideA <= 0 || this.mSideB <= 0 || this.mSideC <= 0 || this.mSideD <= 0 || this.mHeight <= 0)
@@ -122,8 +118,8 @@ namespace TaskOneGeometricFigures
             }
 
             float minBase = Math.Min(this.mSideA, this.mSideB);
-            float maxBase = Math.Max(this.mSideA, this.mSideB);
-            if (this.mHeight >= Math.Min(this.mDiagA, this.mDiagB) || this.mHeight <= 0 || maxBase <= minBase)
+            float maxBase = Math.Max(this.mSideC, this.mSideD);
+            if (this.mHeight <= Math.Min(this.mDiagA, this.mDiagB) || this.mHeight <= 0 || maxBase <= minBase)
             {
                 return false;
             }

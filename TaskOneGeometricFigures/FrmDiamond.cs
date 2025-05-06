@@ -28,18 +28,10 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             diamond.readData(txtMajorDiag, txtMinorDiag);
-
-            if (diamond.IsValid())
-            {
-                diamond.perimeterDiamond();
-                diamond.areaDiamond();
-                diamond.showData(txtPerimeter, txtArea);
-                diamond.plotShape(picCanvas);
-            }
-            else
-            {
-                MessageBox.Show("Los datos ingresados no forman un rombo válido.", "Error");
-            }
+            diamond.perimeterDiamond();
+            diamond.areaDiamond();
+            diamond.showData(txtPerimeter, txtArea);
+            diamond.plotShape(picCanvas);
         }
     }
 }

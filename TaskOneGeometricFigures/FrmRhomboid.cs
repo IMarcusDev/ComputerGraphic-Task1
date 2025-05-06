@@ -22,12 +22,12 @@ namespace TaskOneGeometricFigures
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            romboide.initData(txtHeight, txtWidth, txtPerimeter, txtArea, picCanvas);
+            romboide.initData(txtHeight, txtWidth, txtAngle, txtPerimeter, txtArea, picCanvas);
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            romboide.readData(txtWidth, txtHeight);
+            romboide.readData(txtWidth, txtHeight, txtAngle);
             romboide.perimeterRhomboid();
             romboide.areaRhomboid();
             romboide.showData(txtPerimeter, txtArea);

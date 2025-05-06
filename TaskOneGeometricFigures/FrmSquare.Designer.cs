@@ -42,49 +42,53 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(166, 50);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(155, 57);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 32);
+            this.label4.Size = new System.Drawing.Size(181, 41);
             this.label4.TabIndex = 49;
             this.label4.Text = "Cuadrado";
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Tan;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnReset.Location = new System.Drawing.Point(219, 234);
+            this.btnReset.Location = new System.Drawing.Point(247, 236);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(124, 54);
             this.btnReset.TabIndex = 48;
             this.btnReset.Text = "Resetear";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Tan;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCalcular.Location = new System.Drawing.Point(87, 234);
+            this.btnCalcular.Location = new System.Drawing.Point(117, 236);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(124, 54);
             this.btnCalcular.TabIndex = 47;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txtArea
             // 
+            this.txtArea.BackColor = System.Drawing.Color.OldLace;
+            this.txtArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtArea.Location = new System.Drawing.Point(219, 357);
+            this.txtArea.Location = new System.Drawing.Point(247, 392);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
-            this.txtArea.Size = new System.Drawing.Size(100, 35);
+            this.txtArea.Size = new System.Drawing.Size(134, 35);
             this.txtArea.TabIndex = 46;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(87, 360);
+            this.label3.Location = new System.Drawing.Point(115, 395);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 29);
             this.label3.TabIndex = 45;
@@ -92,18 +96,20 @@
             // 
             // txtPerimeter
             // 
+            this.txtPerimeter.BackColor = System.Drawing.Color.OldLace;
+            this.txtPerimeter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtPerimeter.Location = new System.Drawing.Point(219, 306);
+            this.txtPerimeter.Location = new System.Drawing.Point(247, 341);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
-            this.txtPerimeter.Size = new System.Drawing.Size(100, 35);
+            this.txtPerimeter.Size = new System.Drawing.Size(134, 35);
             this.txtPerimeter.TabIndex = 44;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(87, 309);
+            this.label2.Location = new System.Drawing.Point(115, 344);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 29);
             this.label2.TabIndex = 43;
@@ -113,7 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(100, 118);
+            this.label1.Location = new System.Drawing.Point(128, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 29);
             this.label1.TabIndex = 41;
@@ -121,17 +127,20 @@
             // 
             // txtWidth
             // 
+            this.txtWidth.BackColor = System.Drawing.Color.OldLace;
+            this.txtWidth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtWidth.Location = new System.Drawing.Point(191, 115);
+            this.txtWidth.Location = new System.Drawing.Point(219, 150);
             this.txtWidth.Name = "txtWidth";
-            this.txtWidth.Size = new System.Drawing.Size(100, 35);
+            this.txtWidth.Size = new System.Drawing.Size(134, 35);
             this.txtWidth.TabIndex = 39;
             // 
             // FrmSquare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(453, 536);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(490, 514);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);

@@ -59,7 +59,7 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+                MessageBox.Show("Ingreso inválido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -92,16 +92,6 @@ namespace TaskOneGeometricFigures
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
 
             mGraphic.DrawPolygon(mPen, points);
-        }
-
-        public void closeForm(Form form)
-        {
-            form.Close();
-        }
-
-        public bool IsValid()
-        {
-            return this.mMajorDiag > 0 && this.mMinorDiag > 0;
         }
     }
 }

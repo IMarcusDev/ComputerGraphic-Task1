@@ -71,13 +71,15 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.SeaShell;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1380, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1380, 40);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,7 +90,7 @@
             this.irregularPolygonsToolStripMenuItem,
             this.curvedFiguresToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(73, 29);
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(93, 36);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
             // polygonsToolStripMenuItem
@@ -98,27 +100,27 @@
             this.btnSquare,
             this.btnStar});
             this.polygonsToolStripMenuItem.Name = "polygonsToolStripMenuItem";
-            this.polygonsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.polygonsToolStripMenuItem.Size = new System.Drawing.Size(310, 40);
             this.polygonsToolStripMenuItem.Text = "Regular Polygons";
             // 
             // btnTriangle
             // 
             this.btnTriangle.Name = "btnTriangle";
-            this.btnTriangle.Size = new System.Drawing.Size(174, 34);
+            this.btnTriangle.Size = new System.Drawing.Size(202, 40);
             this.btnTriangle.Text = "Triangle";
             this.btnTriangle.Click += new System.EventHandler(this.btnTriangle_Click);
             // 
             // btnSquare
             // 
             this.btnSquare.Name = "btnSquare";
-            this.btnSquare.Size = new System.Drawing.Size(174, 34);
+            this.btnSquare.Size = new System.Drawing.Size(202, 40);
             this.btnSquare.Text = "Square";
             this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btnStar
             // 
             this.btnStar.Name = "btnStar";
-            this.btnStar.Size = new System.Drawing.Size(174, 34);
+            this.btnStar.Size = new System.Drawing.Size(202, 40);
             this.btnStar.Text = "Star";
             this.btnStar.Click += new System.EventHandler(this.btnStar_Click);
             // 
@@ -132,48 +134,48 @@
             this.btnDeltoid,
             this.btnDiamond});
             this.irregularPolygonsToolStripMenuItem.Name = "irregularPolygonsToolStripMenuItem";
-            this.irregularPolygonsToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.irregularPolygonsToolStripMenuItem.Size = new System.Drawing.Size(310, 40);
             this.irregularPolygonsToolStripMenuItem.Text = "Irregular Polygons";
             // 
             // btnRectangle
             // 
             this.btnRectangle.Name = "btnRectangle";
-            this.btnRectangle.Size = new System.Drawing.Size(270, 34);
+            this.btnRectangle.Size = new System.Drawing.Size(229, 40);
             this.btnRectangle.Text = "Rectangle";
             this.btnRectangle.Click += new System.EventHandler(this.btnRectangle_Click);
             // 
             // btnRhomboid
             // 
             this.btnRhomboid.Name = "btnRhomboid";
-            this.btnRhomboid.Size = new System.Drawing.Size(270, 34);
+            this.btnRhomboid.Size = new System.Drawing.Size(229, 40);
             this.btnRhomboid.Text = "Rhomboid";
             this.btnRhomboid.Click += new System.EventHandler(this.btnRhomboid_Click);
             // 
             // btnTrapeze
             // 
             this.btnTrapeze.Name = "btnTrapeze";
-            this.btnTrapeze.Size = new System.Drawing.Size(270, 34);
+            this.btnTrapeze.Size = new System.Drawing.Size(229, 40);
             this.btnTrapeze.Text = "Trapeze";
             this.btnTrapeze.Click += new System.EventHandler(this.btnTrapeze_Click);
             // 
             // btnTrapezoid
             // 
             this.btnTrapezoid.Name = "btnTrapezoid";
-            this.btnTrapezoid.Size = new System.Drawing.Size(270, 34);
+            this.btnTrapezoid.Size = new System.Drawing.Size(229, 40);
             this.btnTrapezoid.Text = "Trapezoid";
             this.btnTrapezoid.Click += new System.EventHandler(this.btnTrapezoid_Click);
             // 
             // btnDeltoid
             // 
             this.btnDeltoid.Name = "btnDeltoid";
-            this.btnDeltoid.Size = new System.Drawing.Size(270, 34);
+            this.btnDeltoid.Size = new System.Drawing.Size(229, 40);
             this.btnDeltoid.Text = "Deltoid";
             this.btnDeltoid.Click += new System.EventHandler(this.btnDeltoid_Click);
             // 
             // btnDiamond
             // 
             this.btnDiamond.Name = "btnDiamond";
-            this.btnDiamond.Size = new System.Drawing.Size(270, 34);
+            this.btnDiamond.Size = new System.Drawing.Size(229, 40);
             this.btnDiamond.Text = "Diamond";
             this.btnDiamond.Click += new System.EventHandler(this.btnDiamond_Click);
             // 
@@ -184,35 +186,36 @@
             this.btnEllipse,
             this.btnSemicircle});
             this.curvedFiguresToolStripMenuItem.Name = "curvedFiguresToolStripMenuItem";
-            this.curvedFiguresToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.curvedFiguresToolStripMenuItem.Size = new System.Drawing.Size(310, 40);
             this.curvedFiguresToolStripMenuItem.Text = "Curved Figures";
             // 
             // btnCircle
             // 
             this.btnCircle.Name = "btnCircle";
-            this.btnCircle.Size = new System.Drawing.Size(192, 34);
+            this.btnCircle.Size = new System.Drawing.Size(226, 40);
             this.btnCircle.Text = "Circle";
             this.btnCircle.Click += new System.EventHandler(this.btnCircle_Click);
             // 
             // btnEllipse
             // 
             this.btnEllipse.Name = "btnEllipse";
-            this.btnEllipse.Size = new System.Drawing.Size(192, 34);
+            this.btnEllipse.Size = new System.Drawing.Size(226, 40);
             this.btnEllipse.Text = "Ellipse";
             this.btnEllipse.Click += new System.EventHandler(this.btnEllipse_Click);
             // 
             // btnSemicircle
             // 
             this.btnSemicircle.Name = "btnSemicircle";
-            this.btnSemicircle.Size = new System.Drawing.Size(192, 34);
+            this.btnSemicircle.Size = new System.Drawing.Size(226, 40);
             this.btnSemicircle.Text = "Semicircle";
             this.btnSemicircle.Click += new System.EventHandler(this.btnSemicircle_Click);
             // 
             // picCanvas
             // 
-            this.picCanvas.Location = new System.Drawing.Point(739, 54);
+            this.picCanvas.BackColor = System.Drawing.SystemColors.Info;
+            this.picCanvas.Location = new System.Drawing.Point(667, 54);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(618, 574);
+            this.picCanvas.Size = new System.Drawing.Size(690, 574);
             this.picCanvas.TabIndex = 2;
             this.picCanvas.TabStop = false;
             // 
@@ -220,13 +223,14 @@
             // 
             this.panelContainer.Location = new System.Drawing.Point(12, 54);
             this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(689, 574);
+            this.panelContainer.Size = new System.Drawing.Size(619, 574);
             this.panelContainer.TabIndex = 3;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1380, 679);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.picCanvas);

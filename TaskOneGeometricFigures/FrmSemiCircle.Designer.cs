@@ -42,49 +42,53 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(112, 35);
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(139, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 32);
+            this.label4.Size = new System.Drawing.Size(222, 41);
             this.label4.TabIndex = 34;
             this.label4.Text = "Semicírculo";
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Tan;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnReset.Location = new System.Drawing.Point(197, 214);
+            this.btnReset.Location = new System.Drawing.Point(251, 203);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 35);
+            this.btnReset.Size = new System.Drawing.Size(125, 54);
             this.btnReset.TabIndex = 33;
             this.btnReset.Text = "Resetear";
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnCalcular
             // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Tan;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCalcular.Location = new System.Drawing.Point(65, 214);
+            this.btnCalcular.Location = new System.Drawing.Point(119, 203);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(125, 35);
+            this.btnCalcular.Size = new System.Drawing.Size(125, 54);
             this.btnCalcular.TabIndex = 32;
             this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txtArea
             // 
+            this.txtArea.BackColor = System.Drawing.Color.OldLace;
+            this.txtArea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtArea.Location = new System.Drawing.Point(197, 337);
+            this.txtArea.Location = new System.Drawing.Point(251, 340);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
-            this.txtArea.Size = new System.Drawing.Size(100, 35);
+            this.txtArea.Size = new System.Drawing.Size(129, 35);
             this.txtArea.TabIndex = 31;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(65, 340);
+            this.label3.Location = new System.Drawing.Point(119, 343);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 29);
             this.label3.TabIndex = 30;
@@ -92,18 +96,20 @@
             // 
             // txtPerimeter
             // 
+            this.txtPerimeter.BackColor = System.Drawing.Color.OldLace;
+            this.txtPerimeter.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtPerimeter.Location = new System.Drawing.Point(197, 286);
+            this.txtPerimeter.Location = new System.Drawing.Point(251, 289);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
-            this.txtPerimeter.Size = new System.Drawing.Size(100, 35);
+            this.txtPerimeter.Size = new System.Drawing.Size(129, 35);
             this.txtPerimeter.TabIndex = 29;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(65, 289);
+            this.label2.Location = new System.Drawing.Point(119, 292);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 29);
             this.label2.TabIndex = 28;
@@ -113,7 +119,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(60, 132);
+            this.label1.Location = new System.Drawing.Point(114, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(83, 29);
             this.label1.TabIndex = 27;
@@ -121,17 +127,20 @@
             // 
             // txtRadius
             // 
+            this.txtRadius.BackColor = System.Drawing.Color.OldLace;
+            this.txtRadius.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRadius.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtRadius.Location = new System.Drawing.Point(152, 129);
+            this.txtRadius.Location = new System.Drawing.Point(206, 132);
             this.txtRadius.Name = "txtRadius";
-            this.txtRadius.Size = new System.Drawing.Size(100, 35);
+            this.txtRadius.Size = new System.Drawing.Size(129, 35);
             this.txtRadius.TabIndex = 26;
             // 
             // FrmSemiCircle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 450);
+            this.BackColor = System.Drawing.Color.Bisque;
+            this.ClientSize = new System.Drawing.Size(490, 514);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);
