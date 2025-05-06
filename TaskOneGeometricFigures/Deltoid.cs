@@ -26,16 +26,23 @@ namespace TaskOneGeometricFigures
             this.mWidth = 0.0f;
         }
 
+        // Add validation to ensure the axes and width are valid
         public void readData(TextBox txtMajorAxis, TextBox txtMinorAxis, TextBox txtWidth)
         {
             try
             {
-                float Major, Minor, Width;
-                Major = float.Parse(txtMajorAxis.Text);
-                Minor = float.Parse(txtMinorAxis.Text);
-                Width = float.Parse(txtWidth.Text);
+                float Major = float.Parse(txtMajorAxis.Text);
+                float Minor = float.Parse(txtMinorAxis.Text);
+                float Width = float.Parse(txtWidth.Text);
 
-                if (Major > 0 && Minor > 0 && Width > 0)
+                if (Major <= 0 || Minor <= 0 || Width <= 0)
+                {
+                    MessageBox.Show("Los ejes y el ancho deben ser mayores a 0.", "Error");
+                    this.mMajorAxis = 0.0f;
+                    this.mMinorAxis = 0.0f;
+                    this.mWidth = 0.0f;
+                }
+                else
                 {
                     this.mMajorAxis = Major;
                     this.mMinorAxis = Minor;
@@ -44,8 +51,13 @@ namespace TaskOneGeometricFigures
             }
             catch
             {
-                MessageBox.Show("Ingreso invalido, las dimesiones deben ser numeros positivos y mayores que 0.", "Error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
+        }
+
+        public bool IsValid()
+        {
+            return this.mMajorAxis > 0 && this.mMinorAxis > 0 && this.mWidth > 0;
         }
 
         public void perimeterDeltoid()

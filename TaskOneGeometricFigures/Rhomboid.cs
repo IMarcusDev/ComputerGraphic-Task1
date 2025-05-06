@@ -29,19 +29,24 @@ namespace TaskOneGeometricFigures
         {
             try
             {
-                float Height, Width;
-                Height = float.Parse(txtHeight.Text);
-                Width = float.Parse(txtWidth.Text);
+                float Height = float.Parse(txtHeight.Text);
+                float Width = float.Parse(txtWidth.Text);
 
-                if (Height > 0.0f && Width > 0.0f)
+                if (Height <= 0 || Width <= 0)
+                {
+                    MessageBox.Show("La altura y el ancho deben ser mayores a 0.", "Error");
+                    this.mHeight = 0.0f;
+                    this.mWidth = 0.0f;
+                }
+                else
                 {
                     this.mHeight = Height;
                     this.mWidth = Width;
                 }
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Ingreso invalido, las dimesiones deben ser numeros positivos y mayores que 0.", "Error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -74,15 +79,28 @@ namespace TaskOneGeometricFigures
             txtPerimeter.Text = this.mPerimeter.ToString();
             txtArea.Text = this.mArea.ToString();
         }
+
         public void plotShape(PictureBox picCanvas)
         {
+            if (this.mHeight <= 0 || this.mWidth <= 0)
+            {
+                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el romboide.", "Error");
+                return;
+            }
+
             this.mGraphic = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
-            PointF point1 = new PointF((this.mWidth / 4) * SF, 0);
-            PointF point2 = new PointF(this.mWidth * SF, 0);
-            PointF point3 = new PointF(this.mWidth * SF, this.mHeight * SF);
-            PointF point4 = new PointF(0, this.mHeight * SF);
+            float centerX = picCanvas.Width / 2.0f;
+            float centerY = picCanvas.Height / 2.0f;
+
+            float offsetX = centerX - (this.mWidth * SF) / 2;
+            float offsetY = centerY - (this.mHeight * SF) / 2;
+
+            PointF point1 = new PointF(offsetX + (this.mWidth / 4) * SF, offsetY);
+            PointF point2 = new PointF(offsetX + this.mWidth * SF, offsetY);
+            PointF point3 = new PointF(offsetX + this.mWidth * SF, offsetY + this.mHeight * SF);
+            PointF point4 = new PointF(offsetX, offsetY + this.mHeight * SF);
 
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
 
@@ -92,6 +110,11 @@ namespace TaskOneGeometricFigures
         public void closeForm(Form form)
         {
             form.Close();
+        }
+
+        public bool IsValid()
+        {
+            return this.mHeight > 0 && this.mWidth > 0;
         }
     }
 }

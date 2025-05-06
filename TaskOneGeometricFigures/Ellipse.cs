@@ -26,8 +26,27 @@ namespace TaskOneGeometricFigures
 
         public void readData(TextBox txtMajorAxis, TextBox txtMinorAxis)
         {
-            this.mMajorAxis = float.Parse(txtMajorAxis.Text);
-            this.mMinorAxis = float.Parse(txtMinorAxis.Text);
+            try
+            {
+                this.mMajorAxis = float.Parse(txtMajorAxis.Text);
+                this.mMinorAxis = float.Parse(txtMinorAxis.Text);
+
+                if (this.mMajorAxis <= 0 || this.mMinorAxis <= 0)
+                {
+                    MessageBox.Show("Los ejes deben ser mayores a 0.", "Error");
+                    this.mMajorAxis = 0.0f;
+                    this.mMinorAxis = 0.0f;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
+            }
+        }
+
+        public bool IsValid()
+        {
+            return this.mMajorAxis > 0 && this.mMinorAxis > 0;
         }
 
         public void perimeterEllipse()
@@ -66,7 +85,7 @@ namespace TaskOneGeometricFigures
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
-            this.mGraph.DrawEllipse(this.mPen, 0, 0, 2 * this.mMajorAxis, 2 * this.mMinorAxis);
+            this.mGraph.DrawEllipse(this.mPen, 0, 0, SF * this.mMajorAxis, SF * this.mMinorAxis);
         }
 
         public void closeForm(Form form)

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.picCanvas = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtArea = new System.Windows.Forms.TextBox();
@@ -39,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtRadius = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -51,25 +48,6 @@
             this.label4.Size = new System.Drawing.Size(103, 32);
             this.label4.TabIndex = 25;
             this.label4.Text = "Círculo";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.Location = new System.Drawing.Point(97, 390);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(89, 37);
-            this.btnExit.TabIndex = 24;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // picCanvas
-            // 
-            this.picCanvas.Location = new System.Drawing.Point(360, 62);
-            this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(416, 341);
-            this.picCanvas.TabIndex = 23;
-            this.picCanvas.TabStop = false;
             // 
             // btnReset
             // 
@@ -153,10 +131,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(336, 450);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtArea);
@@ -165,9 +141,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtRadius);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCircle";
             this.Text = "FrmCircle";
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,8 +152,6 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox picCanvas;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtArea;

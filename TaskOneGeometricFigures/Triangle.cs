@@ -28,13 +28,25 @@ namespace TaskOneGeometricFigures
         {
             try
             {
-            this.mWidth = float.Parse(txtWidth.Text);
-            this.mHeight = float.Parse(txtHeight.Text);
+                this.mWidth = float.Parse(txtWidth.Text);
+                this.mHeight = float.Parse(txtHeight.Text);
+
+                if (this.mWidth <= 0 || this.mHeight <= 0)
+                {
+                    MessageBox.Show("El ancho y la altura deben ser mayores a 0.", "Error");
+                    this.mWidth = 0.0f;
+                    this.mHeight = 0.0f;
+                }
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Ingreso no valido, solo números", "Error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
+        }
+
+        public bool IsValid()
+        {
+            return this.mWidth > 0 && this.mHeight > 0;
         }
 
         public void PerimeterTriangle()

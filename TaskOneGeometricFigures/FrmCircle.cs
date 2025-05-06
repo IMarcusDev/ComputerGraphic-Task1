@@ -13,10 +13,12 @@ namespace TaskOneGeometricFigures
 {
     public partial class FrmCircle : Form
     {
-    private Circle circle = new Circle();
-        public FrmCircle()
+        private Circle circle = new Circle();
+        private PictureBox picCanvas;
+        public FrmCircle(PictureBox picCanvas)
         {
             InitializeComponent();
+            this.picCanvas = picCanvas;
         }
 
         private void FrmCircle_Load(object sender, EventArgs e)
@@ -32,10 +34,18 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             circle.readData(txtRadius);
-            circle.perimeterCircle();
-            circle.areaCircle();
-            circle.showData(txtPerimeter, txtArea);
-            circle.plotShape(picCanvas);
+
+            if (circle.IsValid())
+            {
+                circle.perimeterCircle();
+                circle.areaCircle();
+                circle.showData(txtPerimeter, txtArea);
+                circle.plotShape(picCanvas);
+            }
+            else
+            {
+                MessageBox.Show("Los datos ingresados no forman un círculo válido.", "Error");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

@@ -22,3 +22,14 @@ C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneG
 C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.exe
 C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.pdb
 C:\Users\Marcos Escobar\source\repos\IMarcusDev\TaskOneComputerGraphics\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTrapezoid.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmMain.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTrapeze.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmTrapezoid.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmDeltoid.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmSemiCircle.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmDiamond.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmEllipse.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmRectangle.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmSquare.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmStar.resources
+C:\Users\Marcos\source\repos\TaskOneGeometricFigures\TaskOneGeometricFigures\obj\Debug\TaskOneGeometricFigures.FrmRhomboid.resources

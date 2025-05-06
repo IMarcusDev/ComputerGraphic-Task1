@@ -13,9 +13,12 @@ namespace TaskOneGeometricFigures
     public partial class FrmTriangle : Form
     {
         private Triangle triangle = new Triangle();
-        public FrmTriangle()
+        private PictureBox picCanvas;
+
+        public FrmTriangle(PictureBox picCanvas)
         {
             InitializeComponent();
+            this.picCanvas = picCanvas;
         }
 
         private void FrmTriangle_Load(object sender, EventArgs e)
@@ -31,10 +34,18 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             triangle.ReadData(txtWidth, txtHeight);
-            triangle.PerimeterTriangle();
-            triangle.AreaTriangle();
-            triangle.ShowData(txtPerimeter, txtArea);
-            triangle.PlotShape(picCanvas);
+
+            if (triangle.IsValid())
+            {
+                triangle.PerimeterTriangle();
+                triangle.AreaTriangle();
+                triangle.ShowData(txtPerimeter, txtArea);
+                triangle.PlotShape(picCanvas);
+            }
+            else
+            {
+                MessageBox.Show("Los datos ingresados no forman un triángulo válido.", "Error");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

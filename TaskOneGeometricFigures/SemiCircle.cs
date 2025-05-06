@@ -26,7 +26,20 @@ namespace TaskOneGeometricFigures
 
         public void readData(TextBox txtRadius)
         {
-            this.mRadius = float.Parse(txtRadius.Text);
+            try
+            {
+                this.mRadius = float.Parse(txtRadius.Text);
+
+                if (this.mRadius <= 0)
+                {
+                    MessageBox.Show("El radio debe ser mayor a 0.", "Error");
+                    this.mRadius = 0.0f;
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar un número positivo.", "Error");
+            }
         }
 
         public void perimeterCircle()
@@ -59,17 +72,28 @@ namespace TaskOneGeometricFigures
 
         public void plotShape(PictureBox picCanvas)
         {
+            if (this.mRadius <= 0)
+            {
+                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el semicírculo.", "Error");
+                return;
+            }
+
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
             float diameter = this.mRadius * 2 * SF;
 
-            this.mGraph.DrawPie(mPen, 0, 0, this.mRadius, this.mRadius, 0, this.mAngle);
+            this.mGraph.DrawPie(mPen, 0, 0, diameter, diameter, 0, 180);
         }
 
         public void closeForm(Form form)
         {
             form.Close();
+        }
+
+        public bool IsValid()
+        {
+            return this.mRadius > 0;
         }
     }
 }

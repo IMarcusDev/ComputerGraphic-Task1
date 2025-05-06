@@ -16,7 +16,7 @@ namespace TaskOneGeometricFigures
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTrapezoid());
+            Application.Run(new FrmMain());
         }
     }
 }

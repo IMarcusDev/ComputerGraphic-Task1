@@ -38,10 +38,7 @@
             this.txtArea = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.picCanvas = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // txtHeight
@@ -140,25 +137,6 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // picCanvas
-            // 
-            this.picCanvas.Location = new System.Drawing.Point(364, 61);
-            this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(416, 341);
-            this.picCanvas.TabIndex = 10;
-            this.picCanvas.TabStop = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.Location = new System.Drawing.Point(101, 389);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(89, 37);
-            this.btnExit.TabIndex = 11;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -173,10 +151,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(379, 450);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtArea);
@@ -187,10 +163,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtWidth);
             this.Controls.Add(this.txtHeight);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmTriangle";
             this.Text = "FrmTriangle";
             this.Load += new System.EventHandler(this.FrmTriangle_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,8 +184,6 @@
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.PictureBox picCanvas;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label4;
     }
 }

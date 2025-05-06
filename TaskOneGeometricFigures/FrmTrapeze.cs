@@ -13,9 +13,11 @@ namespace TaskOneGeometricFigures
     public partial class FrmTrapeze : Form
     {
         private Trapeze trapeze = new Trapeze();
-        public FrmTrapeze()
+        private PictureBox picCanvas;
+        public FrmTrapeze(PictureBox picCanvas)
         {
             InitializeComponent();
+            this.picCanvas = picCanvas;
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -26,10 +28,18 @@ namespace TaskOneGeometricFigures
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             trapeze.readData(txtBaseMajor, txtBaseMinor, txtHeight);
-            trapeze.perimeterTrapeze();
-            trapeze.areaTrapeze();
-            trapeze.showData(txtPerimeter, txtArea);
-            trapeze.plotShape(picCanvas);
+
+            if (trapeze.IsValid())
+            {
+                trapeze.perimeterTrapeze();
+                trapeze.areaTrapeze();
+                trapeze.showData(txtPerimeter, txtArea);
+                trapeze.plotShape(picCanvas);
+            }
+            else
+            {
+                MessageBox.Show("Los datos ingresados no forman un trapecio válido.", "Error");
+            }
         }
 
         private void btnExit_Click(object sender, EventArgs e)

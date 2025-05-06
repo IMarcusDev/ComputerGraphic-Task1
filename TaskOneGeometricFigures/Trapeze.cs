@@ -30,16 +30,34 @@ namespace TaskOneGeometricFigures
         {
             try
             {
-                if (float.Parse(txtHeight.Text) > 0 && float.Parse(txtBaseMinor.Text) > 0 && float.Parse(txtBaseMajor.Text) > 0)
+                float BaseMajor = float.Parse(txtBaseMajor.Text);
+                float BaseMinor = float.Parse(txtBaseMinor.Text);
+                float Height = float.Parse(txtHeight.Text);
+
+                if (BaseMajor <= 0 || BaseMinor <= 0 || Height <= 0)
                 {
-                    this.mHeight = float.Parse(txtHeight.Text);
-                    this.mBaseMinor = float.Parse(txtBaseMinor.Text);
-                    this.mBaseMajor = float.Parse(txtBaseMajor.Text);
+                    MessageBox.Show("Las bases y la altura deben ser mayores a 0.", "Error");
+                    this.mBaseMajor = 0.0f;
+                    this.mBaseMinor = 0.0f;
+                    this.mHeight = 0.0f;
+                }
+                else if (BaseMajor <= BaseMinor)
+                {
+                    MessageBox.Show("La base mayor debe ser mayor que la base menor.", "Error");
+                    this.mBaseMajor = 0.0f;
+                    this.mBaseMinor = 0.0f;
+                    this.mHeight = 0.0f;
+                }
+                else
+                {
+                    this.mBaseMajor = BaseMajor;
+                    this.mBaseMinor = BaseMinor;
+                    this.mHeight = Height;
                 }
             }
             catch
             {
-                MessageBox.Show("Ingreso invalido, solo numeros", "Error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -97,6 +115,11 @@ namespace TaskOneGeometricFigures
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
             
             mGraph.DrawPolygon(this.mPen, points);
+        }
+
+        public bool IsValid()
+        {
+            return this.mBaseMajor > 0 && this.mBaseMinor > 0 && this.mHeight > 0;
         }
     }
 }

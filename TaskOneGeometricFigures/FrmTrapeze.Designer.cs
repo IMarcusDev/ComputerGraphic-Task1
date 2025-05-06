@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.picCanvas = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtArea = new System.Windows.Forms.TextBox();
@@ -43,48 +41,24 @@
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtBaseMinor = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(68, 19);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(102, 29);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 24);
+            this.label4.Size = new System.Drawing.Size(125, 32);
             this.label4.TabIndex = 25;
             this.label4.Text = "Trapecio";
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnExit.Location = new System.Drawing.Point(69, 290);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(2);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(59, 29);
-            this.btnExit.TabIndex = 24;
-            this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // picCanvas
-            // 
-            this.picCanvas.Location = new System.Drawing.Point(248, 45);
-            this.picCanvas.Margin = new System.Windows.Forms.Padding(2);
-            this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(277, 222);
-            this.picCanvas.TabIndex = 23;
-            this.picCanvas.TabStop = false;
             // 
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnReset.Location = new System.Drawing.Point(112, 165);
-            this.btnReset.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReset.Location = new System.Drawing.Point(168, 254);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(83, 35);
+            this.btnReset.Size = new System.Drawing.Size(124, 54);
             this.btnReset.TabIndex = 22;
             this.btnReset.Text = "Resetear";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -93,10 +67,9 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnCalcular.Location = new System.Drawing.Point(24, 165);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCalcular.Location = new System.Drawing.Point(36, 254);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(83, 35);
+            this.btnCalcular.Size = new System.Drawing.Size(124, 54);
             this.btnCalcular.TabIndex = 21;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -105,42 +78,38 @@
             // txtArea
             // 
             this.txtArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtArea.Location = new System.Drawing.Point(112, 245);
-            this.txtArea.Margin = new System.Windows.Forms.Padding(2);
+            this.txtArea.Location = new System.Drawing.Point(168, 377);
             this.txtArea.Name = "txtArea";
             this.txtArea.ReadOnly = true;
-            this.txtArea.Size = new System.Drawing.Size(68, 26);
+            this.txtArea.Size = new System.Drawing.Size(100, 35);
             this.txtArea.TabIndex = 20;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(24, 247);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(36, 380);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 20);
+            this.label3.Size = new System.Drawing.Size(69, 29);
             this.label3.TabIndex = 19;
             this.label3.Text = "Área:";
             // 
             // txtPerimeter
             // 
             this.txtPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtPerimeter.Location = new System.Drawing.Point(112, 212);
-            this.txtPerimeter.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPerimeter.Location = new System.Drawing.Point(168, 326);
             this.txtPerimeter.Name = "txtPerimeter";
             this.txtPerimeter.ReadOnly = true;
-            this.txtPerimeter.Size = new System.Drawing.Size(68, 26);
+            this.txtPerimeter.Size = new System.Drawing.Size(100, 35);
             this.txtPerimeter.TabIndex = 18;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(24, 214);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(36, 329);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.Size = new System.Drawing.Size(125, 29);
             this.label2.TabIndex = 17;
             this.label2.Text = "Perímetro:";
             // 
@@ -148,10 +117,9 @@
             // 
             this.lblWidth.AutoSize = true;
             this.lblWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblWidth.Location = new System.Drawing.Point(24, 93);
-            this.lblWidth.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblWidth.Location = new System.Drawing.Point(36, 143);
             this.lblWidth.Name = "lblWidth";
-            this.lblWidth.Size = new System.Drawing.Size(97, 20);
+            this.lblWidth.Size = new System.Drawing.Size(146, 29);
             this.lblWidth.TabIndex = 16;
             this.lblWidth.Text = "Base mayor:";
             // 
@@ -159,61 +127,54 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(24, 63);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(36, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 20);
+            this.label1.Size = new System.Drawing.Size(60, 29);
             this.label1.TabIndex = 15;
             this.label1.Text = "Alto:";
             // 
             // txtBaseMajor
             // 
             this.txtBaseMajor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBaseMajor.Location = new System.Drawing.Point(127, 90);
-            this.txtBaseMajor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBaseMajor.Location = new System.Drawing.Point(190, 138);
             this.txtBaseMajor.Name = "txtBaseMajor";
-            this.txtBaseMajor.Size = new System.Drawing.Size(68, 26);
+            this.txtBaseMajor.Size = new System.Drawing.Size(100, 35);
             this.txtBaseMajor.TabIndex = 14;
             // 
             // txtHeight
             // 
             this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtHeight.Location = new System.Drawing.Point(127, 60);
-            this.txtHeight.Margin = new System.Windows.Forms.Padding(2);
+            this.txtHeight.Location = new System.Drawing.Point(190, 92);
             this.txtHeight.Name = "txtHeight";
-            this.txtHeight.Size = new System.Drawing.Size(68, 26);
+            this.txtHeight.Size = new System.Drawing.Size(100, 35);
             this.txtHeight.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(24, 132);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(36, 203);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(99, 20);
+            this.label5.Size = new System.Drawing.Size(149, 29);
             this.label5.TabIndex = 26;
             this.label5.Text = "Base menor:";
             // 
             // txtBaseMinor
             // 
             this.txtBaseMinor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtBaseMinor.Location = new System.Drawing.Point(127, 129);
-            this.txtBaseMinor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtBaseMinor.Location = new System.Drawing.Point(190, 198);
             this.txtBaseMinor.Name = "txtBaseMinor";
-            this.txtBaseMinor.Size = new System.Drawing.Size(68, 26);
+            this.txtBaseMinor.Size = new System.Drawing.Size(100, 35);
             this.txtBaseMinor.TabIndex = 27;
             // 
             // FrmTrapeze
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(589, 329);
+            this.ClientSize = new System.Drawing.Size(376, 506);
             this.Controls.Add(this.txtBaseMinor);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtArea);
@@ -224,9 +185,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtBaseMajor);
             this.Controls.Add(this.txtHeight);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmTrapeze";
             this.Text = "FrmTrapeze";
-            ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -235,8 +197,6 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.PictureBox picCanvas;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtArea;

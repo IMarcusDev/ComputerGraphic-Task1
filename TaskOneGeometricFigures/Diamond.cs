@@ -24,22 +24,42 @@ namespace TaskOneGeometricFigures
             this.mArea = 0.0f; this.mMinorDiag = 0.0f;
         }
 
+        public void initData(TextBox txtMajorDiag, TextBox txtMinorDiag, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
+        {
+            this.mMajorDiag = 0.0f; this.mPerimeter = 0.0f;
+            this.mArea = 0.0f; this.mMinorDiag = 0.0f;
+
+            txtArea.Clear();
+            txtMajorDiag.Clear();
+            txtMinorDiag.Clear();
+            txtPerimeter.Clear();
+
+            txtMajorDiag.Focus();
+            picCanvas.Refresh();
+        }
+
         public void readData(TextBox txtMajorDiag, TextBox txtMinorDiag)
         {
             try
             {
-                float Major, Minor;
-                Major = float.Parse(txtMajorDiag.Text);
-                Minor = float.Parse(txtMinorDiag.Text);
-                if (Major > 0.0f && Minor > 0.0f)
+                float Major = float.Parse(txtMajorDiag.Text);
+                float Minor = float.Parse(txtMinorDiag.Text);
+
+                if (Major <= 0 || Minor <= 0)
+                {
+                    MessageBox.Show("Las diagonales deben ser mayores a 0.", "Error");
+                    this.mMajorDiag = 0.0f;
+                    this.mMinorDiag = 0.0f;
+                }
+                else
                 {
                     this.mMajorDiag = Major;
                     this.mMinorDiag = Minor;
                 }
             }
-            catch 
+            catch
             {
-                MessageBox.Show("Ingreso invalido, las dimesiones deben ser numeros positivos y mayores que 0.", "Error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
@@ -77,6 +97,11 @@ namespace TaskOneGeometricFigures
         public void closeForm(Form form)
         {
             form.Close();
+        }
+
+        public bool IsValid()
+        {
+            return this.mMajorDiag > 0 && this.mMinorDiag > 0;
         }
     }
 }

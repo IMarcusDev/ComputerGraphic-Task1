@@ -24,36 +24,50 @@ namespace TaskOneGeometricFigures
             this.mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        public void ReadData(TextBox txtWidth, TextBox txtHeight)
+        // Add validation to ensure the rectangle's dimensions are valid
+        public void readData(TextBox txtWidth, TextBox txtHeight)
         {
             try
             {
                 this.mWidth = float.Parse(txtWidth.Text);
                 this.mHeight = float.Parse(txtHeight.Text);
+
+                if (this.mWidth <= 0 || this.mHeight <= 0)
+                {
+                    MessageBox.Show("El ancho y la altura deben ser mayores a 0.", "Error");
+                    this.mWidth = 0.0f;
+                    this.mHeight = 0.0f;
+                }
+                else if (this.mWidth == this.mHeight)
+                {
+                    MessageBox.Show("El ancho y la altura son iguales, lo que forma un cuadrado. Por favor, ingrese valores diferentes para formar un rectángulo.", "Advertencia");
+                    this.mWidth = 0.0f;
+                    this.mHeight = 0.0f;
+                }
             }
             catch
             {
-                MessageBox.Show("Ingreso no valido...", "Mensaje de error");
+                MessageBox.Show("Ingreso no válido. Asegúrese de ingresar números positivos.", "Error");
             }
         }
 
-        public void PerimeterRectangle()
+        public void perimeterRectangle()
         {
             this.mPerimeter = 2 * (mWidth + mHeight);
         }
 
-        public void AreaRectangle()
+        public void areaRectangle()
         {
             this.mArea = mWidth * mHeight;
         }
 
-        public void PrintData(TextBox txtPerimeter, TextBox txtArea)
+        public void showData(TextBox txtPerimeter, TextBox txtArea)
         {
             txtArea.Text = mArea.ToString();
             txtPerimeter.Text = mPerimeter.ToString();
         }
 
-        public void InitData(TextBox txtWidth, TextBox txtHeight, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
+        public void initData(TextBox txtWidth, TextBox txtHeight, TextBox txtPerimeter, TextBox txtArea, PictureBox picCanvas)
         {
             this.mWidth = 0.0f; this.mHeight = 0.0f;
             this.mPerimeter = 0.0f; this.mArea = 0.0f;
@@ -65,15 +79,20 @@ namespace TaskOneGeometricFigures
             picCanvas.Refresh();
         }
 
-        public void PlotShape(PictureBox picCanvas)
+        public void plotShape(PictureBox picCanvas)
         {
+            if (this.mWidth <= 0 || this.mHeight <= 0)
+            {
+                MessageBox.Show("Dimensiones inválidas. No se puede dibujar el rectángulo.", "Error");
+                return;
+            }
+
             this.mGraph = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
             mGraph.DrawRectangle(mPen, 0, 0, mWidth * SF, mHeight * SF);
-
         }
 
-        public void CloseForm(Form form)
+        public void closeForm(Form form)
         {
             form.Close();
         }
