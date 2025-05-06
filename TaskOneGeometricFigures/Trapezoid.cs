@@ -68,7 +68,6 @@ namespace TaskOneGeometricFigures
 
         public void areaTrapezoid()
         {
-            // General formula for trapezoid area
             this.mArea = ((this.mSideA + this.mSideB) / 2) * this.mHeight;
         }
 
@@ -83,11 +82,10 @@ namespace TaskOneGeometricFigures
             this.mGraphic = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 3);
 
-            // Allow user to specify all four vertices explicitly
-            PointF point1 = new PointF(0, this.mHeight * SF); // Bottom-left
-            PointF point2 = new PointF(this.mSideB * SF, this.mHeight * SF); // Bottom-right
-            PointF point3 = new PointF((this.mSideB - this.mSideC) * SF, 0); // Top-right
-            PointF point4 = new PointF((this.mSideA - this.mSideD) * SF, 0); // Top-left
+            PointF point1 = new PointF(0, this.mHeight * SF);
+            PointF point2 = new PointF(this.mSideB * SF, this.mHeight * SF);
+            PointF point3 = new PointF((this.mSideB - this.mSideC) * SF, 0);
+            PointF point4 = new PointF((this.mSideA - this.mSideD) * SF, 0);
 
             PointF[] points = new PointF[] { point1, point2, point3, point4 };
 
@@ -118,13 +116,11 @@ namespace TaskOneGeometricFigures
 
         public bool isValid()
         {
-            // Validate that the dimensions form a valid trapezoid
             if (this.mSideA <= 0 || this.mSideB <= 0 || this.mSideC <= 0 || this.mSideD <= 0 || this.mHeight <= 0)
             {
                 return false;
             }
 
-            // Check if the height is consistent with the diagonals and sides
             float minBase = Math.Min(this.mSideA, this.mSideB);
             float maxBase = Math.Max(this.mSideA, this.mSideB);
             if (this.mHeight >= Math.Min(this.mDiagA, this.mDiagB) || this.mHeight <= 0 || maxBase <= minBase)

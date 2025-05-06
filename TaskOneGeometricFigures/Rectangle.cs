@@ -24,7 +24,6 @@ namespace TaskOneGeometricFigures
             this.mPerimeter = 0.0f; mArea = 0.0f;
         }
 
-        // Add validation to ensure the rectangle's dimensions are valid
         public void readData(TextBox txtWidth, TextBox txtHeight)
         {
             try

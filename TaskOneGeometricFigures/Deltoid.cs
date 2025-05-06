@@ -26,7 +26,6 @@ namespace TaskOneGeometricFigures
             this.mWidth = 0.0f;
         }
 
-        // Add validation to ensure the axes and width are valid
         public void readData(TextBox txtMajorAxis, TextBox txtMinorAxis, TextBox txtWidth)
         {
             try

@@ -54,7 +54,7 @@
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnReset.Location = new System.Drawing.Point(161, 198);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(125, 35);
+            this.btnReset.Size = new System.Drawing.Size(125, 52);
             this.btnReset.TabIndex = 22;
             this.btnReset.Text = "Resetear";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -65,7 +65,7 @@
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnCalcular.Location = new System.Drawing.Point(29, 198);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(125, 35);
+            this.btnCalcular.Size = new System.Drawing.Size(125, 52);
             this.btnCalcular.TabIndex = 21;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;

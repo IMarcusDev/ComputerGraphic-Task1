@@ -53,13 +53,12 @@ namespace TaskOneGeometricFigures
             this.mGraphic = picCanvas.CreateGraphics();
             this.mPen = new Pen(Color.Blue, 2);
 
-            // Calculate the center of the PictureBox
             float centerX = picCanvas.Width / 2.0f;
             float centerY = picCanvas.Height / 2.0f;
 
             PointF[] points = new PointF[10];
-            double angle = -Math.PI / 2; // Start at the top of the star
-            double step = Math.PI / 5; // 36 degrees per step
+            double angle = -Math.PI / 2;
+            double step = Math.PI / 5;
 
             for (int i = 0; i < 10; i++)
             {
@@ -76,8 +75,8 @@ namespace TaskOneGeometricFigures
 
         public void perimeterStar(TextBox txtPerimeter)
         {
-            double angle = -Math.PI / 2; // Start at the top of the star
-            double step = Math.PI / 5; // 36 degrees per step
+            double angle = -Math.PI / 2;
+            double step = Math.PI / 5;
             PointF[] points = new PointF[10];
 
             for (int i = 0; i < 10; i++)
@@ -154,7 +153,6 @@ namespace TaskOneGeometricFigures
             form.Close();
         }
 
-        // Add validation method to ensure the star's dimensions are valid
         public bool IsValid()
         {
             return this.mOuterRadius > 0 && this.mInnerRadius > 0 && this.mInnerRadius < this.mOuterRadius;
